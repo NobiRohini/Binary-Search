@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+    int n,i,key,a[50]mid;
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    scanf("%d",key);
+    int low=0;
+    int high=0;
+    int high=n-1;
+    while(low<=high)
+    {
+        mid=(low+high)/2;
+        if(a[mid]==key)
+        {
+            printf("element found at %d pos",mid);
+            break;
+        }
+        else if (a[mid]<key)
+        {
+            low=mid+1;
+            else
+            {
+                high=mid-1;
+                for(i=0;i<n;i++)
+                if(a[i]%2==0)
+                printf("%d",a[i]);
+            }
+        }
+    }
